@@ -1,0 +1,63 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+@media(min-width: 768px) {
+    .logo {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .navegacion {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.principal {
+    width: 95%;
+    margin: 5rem auto 0 auto;
+}
+
+@media(min-width: 768px) {
+    .principal {
+        max-height: 100vh;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        width: 100%;
+    }
+}
+
+.bloqueIzquierdo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .bloqueIzquierdo {
+        width: 50%;
+    }
+}
+
+@media(min-width: 768px) {
+    .bloqueDerecho {
+        background-image: url(/computadora.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 100%;
+    }
+}

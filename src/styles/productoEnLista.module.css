@@ -1,0 +1,97 @@
+.producto {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--primary);
+}
+
+@media(min-width: 768px) {
+    .producto {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.contenido h3 {
+    font-weight: 900;
+    font-size: 2.4rem;
+    margin-bottom: .5rem;
+}
+
+.precio {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.fecha {
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.enlace {
+    display: block;
+    padding: 1.5rem 3rem;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 2rem;
+    text-align: center;
+    border: 2px solid var(--primary);
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.enlace:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.botonEliminar {
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 6px;
+    border: 2px solid var(--danger);
+    background-color: #fff;
+    color: var(--text-primary);
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.botonEliminar:hover {
+    cursor: pointer;
+    background-color: var(--danger);
+    color: #fff;
+}
+
+.acciones {
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .acciones {
+        display: flex;
+        gap: 2rem;
+        width: auto;
+    }
+}
+
+.enlace,
+.botonEliminar {
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+
+    .enlace,
+    .botonEliminar {
+        width: auto;
+    }
+}

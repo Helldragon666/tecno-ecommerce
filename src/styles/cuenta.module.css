@@ -1,0 +1,53 @@
+.cuenta {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.carrito,
+.inicio_sesion,
+.usuario {
+    border: unset;
+    background-color: transparent;
+}
+
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito img,
+.inicio_sesion img,
+.usuario img {
+    border-radius: 6px;
+    /*filter: brightness(0) invert(1);*/
+}
+
+.usuario,
+.carrito,
+.logout {
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+}
+
+.usuario:hover,
+.carrito:hover {
+    border-color: var(--primary);
+}
+
+.usuario:hover,
+.carrito:hover,
+.inicio_sesion:hover,
+.logout:hover {
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: var(--danger);
+}
+
+.noMostrar {
+    display: none;
+}

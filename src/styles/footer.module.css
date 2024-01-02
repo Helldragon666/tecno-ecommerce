@@ -1,0 +1,27 @@
+.footer {
+    margin-top: 3rem;
+    background-color: #acb9ff;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+@media(min-width: 768px) {
+    .contenido {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: unset;
+    }
+}
+
+.logo {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+}

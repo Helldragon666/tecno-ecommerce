@@ -1,0 +1,17 @@
+@media(min-width: 768px) {
+    .pasos {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.paso p {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.activo {
+    color: var(--primary);
+}

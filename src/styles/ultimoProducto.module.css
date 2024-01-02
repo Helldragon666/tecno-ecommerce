@@ -1,0 +1,47 @@
+.ultimoProducto {
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+@media(min-width: 768px) {
+    .ultimoProducto {
+       flex-direction: row;
+    }
+}
+
+.precio {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.enlace {
+    display: block;
+    padding: 1.4rem;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 2rem;
+    text-align: center;
+    border: 2px solid var(--primary);
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.enlace:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+@media(min-width: 768px) {
+    .enlace {
+        display: inline-block;
+    }
+}
